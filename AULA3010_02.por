@@ -1,33 +1,29 @@
 programa
 {
-	funcao soma(real a, real b) {
+	funcao real soma(real a, real b) {
 		real resultado = a + b
-
-		escreva("O resultado é: ", resultado)
+		retorne resultado
 	}
 
-	funcao subtracao(real a, real b) {
+	funcao real subtracao(real a, real b) {
 		real resultado = a - b
-
-		escreva("O resultado é: ", resultado)
+		retorne resultado
 	}
 
-	funcao multiplicacao(real a, real b) {
+	funcao real multiplicacao(real a, real b) {
 		real resultado = a * b
-
-		escreva("O resultado é: ", resultado)
+		retorne resultado
 	}
 
-	funcao divisao(real a, real b) {
+	funcao real divisao(real a, real b) {
 		real resultado = a / b
-
-		escreva("O resultado é: ", resultado)
+		retorne resultado
 	}
 	
 	funcao inicio()
 	{
 		inteiro operacao
-		real x, y
+		real x, y, resultado
 
 		escreva("Digite o valor X ")
 		leia(x)
@@ -39,13 +35,13 @@ programa
 		leia(operacao)
 
 		se  (operacao == 1) {
-			soma(x, y)
+			resultado = soma(x, y)
 		} se (operacao == 2) {
-			subtracao(x, y)
+			resultado = subtracao(x, y)
 		} se (operacao == 3) {
-			multiplicacao(x, y)
+			resultado = multiplicacao(x, y)
 		} se (operacao == 4) {
-			divisao(x, y)
+			resultado = divisao(x, y)
 		}
 	}
 }
