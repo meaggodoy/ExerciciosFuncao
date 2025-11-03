@@ -1,39 +1,51 @@
 programa
 {
-	funcao soma(inteiro a, inteiro b) {
-		
+	funcao soma(real a, real b) {
+		real resultado = a + b
+
+		escreva("O resultado é: ", resultado)
 	}
 
-	funcao subtracao(inteiro a, inteiro b) {
-		
+	funcao subtracao(real a, real b) {
+		real resultado = a - b
+
+		escreva("O resultado é: ", resultado)
 	}
 
-	funcao multiplicacao(inteiro a, inteiro b) {
-		
+	funcao multiplicacao(real a, real b) {
+		real resultado = a * b
+
+		escreva("O resultado é: ", resultado)
 	}
 
-	funcao divisao(inteiro a, inteiro b) {
-		
+	funcao divisao(real a, real b) {
+		real resultado = a / b
+
+		escreva("O resultado é: ", resultado)
 	}
 	
 	funcao inicio()
 	{
-		inteiro a, b, resultado, operacao
+		inteiro operacao
+		real x, y
 
-		escreva("Digite a operação desejada: \n")
-		escreva("1 - Soma | 2 - Subtração | 3 - Multiplicação | 4 - Divisão")
+		escreva("Digite o valor X ")
+		leia(x)
+		escreva("Digite o valor Y ")
+		leia(y)
 
-		
+		escreva("Digite a operação desejada:\n")
+		escreva("1 - Soma | 2 - Subtração | 3 - Multiplicação | 4 - Divisão ")
+		leia(operacao)
+
+		se  (operacao == 1) {
+			soma(x, y)
+		} se (operacao == 2) {
+			subtracao(x, y)
+		} se (operacao == 3) {
+			multiplicacao(x, y)
+		} se (operacao == 4) {
+			divisao(x, y)
+		}
 	}
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 386; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
