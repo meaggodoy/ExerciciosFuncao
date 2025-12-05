@@ -1,7 +1,6 @@
 programa
 {
-	inclua biblioteca Util
- --> u
+	inclua biblioteca Util --> u
 	
 	
 funcao preencheVetor(inteiro n[]) {
@@ -48,3 +47,4 @@ funcao preencheVetor(inteiro n[]) {
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
+
